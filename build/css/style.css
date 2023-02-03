@@ -43,7 +43,7 @@
 :root {
   --body-bg: #000000;
   --body-font-size: 16px;
-  --content-width: 1121px;
+  --content-width: 1155px;
   --content-width-mode: 1337px;
   --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
@@ -1219,6 +1219,8 @@ p {
   letter-spacing: normal;
   line-height: normal;
   text-align: left;
+  direction: ltr !important;
+  z-index: 5;
 }
 
 .main-bold {
@@ -1537,6 +1539,53 @@ p {
   height: 100%;
 }
 
+.biography-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  grid-gap: 120px;
+}
+.biography-list__item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+.biography-list__item:nth-child(even) {
+  direction: rtl;
+}
+.biography-list__item:nth-child(even) p {
+  margin-left: initial;
+  margin-right: -30px;
+}
+.biography-list__item:nth-child(even) .biography-list__title {
+  right: initial;
+  left: -7%;
+}
+.biography-list p {
+  margin-left: -20px;
+}
+.biography-list__inner {
+  position: relative;
+}
+.biography-list__title {
+  opacity: 0.1;
+  color: rgba(var(--cl-a), 1);
+  font-family: var(--font-family2);
+  font-size: 100px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: left;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: -20%;
+  right: -5%;
+}
+
 header {
   position: sticky;
   top: 0;
@@ -1693,5 +1742,9 @@ footer {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+.biography-section {
+  padding: 150px 0 170px;
 }
 /*# sourceMappingURL=style.css.map */

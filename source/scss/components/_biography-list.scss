@@ -1,0 +1,44 @@
+.biography-list{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 120px;
+
+    &__item{
+        display: grid;
+        grid-template-columns: auto 1fr;
+    
+        &:nth-child(even){
+            direction: rtl;
+            p{
+                margin-left: initial;
+                margin-right: -30px;
+            }
+            .biography-list__title{
+                right: initial;
+                left: -7%;
+            }
+        }
+    }
+    p{
+        margin-left: -20px;
+    }
+    &__inner{
+        position: relative;
+    }
+
+    &__title{
+        opacity: 0.1;
+        color: rgba(var(--cl-a),1.0);
+        font-family: var(--font-family2);
+        font-size: 100px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: left;
+        text-transform: uppercase;
+        position: absolute;
+        bottom: -20%;
+        right: -5%;
+    }
+}
