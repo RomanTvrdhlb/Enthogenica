@@ -67,3 +67,22 @@ z-index: 5;
   color: rgba(var(--cl-a),1.0);
   font-weight: 700;
 }
+
+.contact-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 112px;
+  height: 40px;
+  background-color: rgba(var(--bg-g),1.0);
+  font-family: var(--font-family);
+  color: rgba(var(--cl-a),1.0);
+  font-size: 13px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+  align-self: flex-end;
+}

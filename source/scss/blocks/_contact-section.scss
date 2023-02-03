@@ -1,0 +1,28 @@
+.contact-section{
+    padding: 190px 0;
+
+    &__box{
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-gap: 31px;
+        align-items: center;
+    }
+
+    &__wrapp{
+        position: relative;
+        &:before{
+            position: absolute;
+            content: "";
+            background-image: url(/img/index/back3.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center center;
+            width: 583px;
+            height: 825px;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            z-index: -1;
+        }
+    }
+}

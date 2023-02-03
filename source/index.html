@@ -6,8 +6,8 @@
   @include('partials/header.html')
 
   <main>
-
-    <section class="main-section">
+    <section class="main-section" id="Enthogenica">
+     
       <div class="main-section__picture">
       </div>
       <div class="container--mode container">
@@ -31,7 +31,7 @@
       </div>
     </section>
 
-    <section class="gallery-section">
+    <section class="gallery-section" id="process">
       <div class="container">
         <div class="gallery-section__box">
           <ul class="gallery-list">
@@ -122,7 +122,7 @@
       </div>
     </section>
 
-    <section class="biography-section">
+    <section class="biography-section" id="bio">
       <div class="container">
         <div class="biography-section__box">
           <ul class="biography-list">
@@ -190,6 +190,31 @@
       </div>
     </section>
 
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-section__box">
+          <div class="contact-section__wrapp">
+            <div class="contct-section__picture">
+              <picture>
+              <source type='image/webp' srcset='img/index/back2.webp'>
+              <img width='667' height='445' src='img/index/back2.png' alt='image'>
+            </picture>
+          </div>
+          </div>
+          <form class="contact-form">
+            <h3 class="contact-form__title">contact us:</h3>
+            <label for="#" class="contact-form__label">
+              <input class="contact-form__input" type="text" placeholder="Your name" input-name>
+            </label>
+            <label for="#" class="contact-form__label">
+              <input class="contact-form__input" type="text" placeholder="Your e-mail" input-email>
+            </label>
+              <textarea class="contact-form__area" name="message" id="#" placeholder="Your message" input-message></textarea>
+            <button type="sumbit" class="contact-button">send</button>
+          </form>
+        </div>
+      </div>
+    </section>
   </main>
 
   @include('partials/footer.html')

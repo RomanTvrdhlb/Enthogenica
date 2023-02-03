@@ -21,7 +21,7 @@
 
 
 <body>
-  <header class="header">
+  <header class="header" href="#Home">
   <div class="container">
     <div class="header-box">
       
@@ -47,22 +47,22 @@
       </a>
     </li>
     <li class="main-nav__item">
-      <a href="#" class="main-nav__link">
+      <a href="#Enthogenica" class="main-nav__link">
         Enthogenica
       </a>
     </li>
     <li class="main-nav__item">
-      <a href="#" class="main-nav__link">
+      <a href="#process" class="main-nav__link">
         process
       </a>
     </li>
     <li class="main-nav__item">
-      <a href="#" class="main-nav__link">
+      <a href="#bio" class="main-nav__link">
         BIO
       </a>
     </li>
     <li class="main-nav__item">
-      <a href="#" class="main-nav__link">
+      <a href="#contact" class="main-nav__link">
         cont
       </a>
     </li>
@@ -219,8 +219,8 @@
 
 
   <main>
-
-    <section class="main-section">
+    <section class="main-section" id="Enthogenica">
+     
       <div class="main-section__picture">
       </div>
       <div class="container--mode container">
@@ -244,7 +244,7 @@
       </div>
     </section>
 
-    <section class="gallery-section">
+    <section class="gallery-section" id="process">
       <div class="container">
         <div class="gallery-section__box">
           <ul class="gallery-list">
@@ -335,7 +335,7 @@
       </div>
     </section>
 
-    <section class="biography-section">
+    <section class="biography-section" id="bio">
       <div class="container">
         <div class="biography-section__box">
           <ul class="biography-list">
@@ -403,174 +403,38 @@
       </div>
     </section>
 
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-section__box">
+          <div class="contact-section__wrapp">
+            <div class="contct-section__picture">
+              <picture>
+              <source type='image/webp' srcset='img/index/back2.webp'>
+              <img width='667' height='445' src='img/index/back2.png' alt='image'>
+            </picture>
+          </div>
+          </div>
+          <form class="contact-form">
+            <h3 class="contact-form__title">contact us:</h3>
+            <label for="#" class="contact-form__label">
+              <input class="contact-form__input" type="text" placeholder="Your name" input-name>
+            </label>
+            <label for="#" class="contact-form__label">
+              <input class="contact-form__input" type="text" placeholder="Your e-mail" input-email>
+            </label>
+              <textarea class="contact-form__area" name="message" id="#" placeholder="Your message" input-message></textarea>
+            <button type="sumbit" class="contact-button">send</button>
+          </form>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>
   <div class="container">
-
-    <!-- <div class="footer-inner">
-      <div class="footer">
-        <div class="footer__coll">
-          <a href="#" class="footer__logo">
-            <svg width='141' height='34'>
-              <use href='img/sprite/sprite.svg#logo'></use>
-            </svg>
-          </a>
-
-          <ul class="main-social footer__social">
-            <li class="main-social__item">
-              <a href="#" class="main-social__link">
-                <svg width='32' height='32'>
-                  <use href='img/sprite/sprite.svg#social'></use>
-                </svg>
-              </a>
-            </li>
-            <li class="main-social__item">
-              <a href="#" class="main-social__link">
-                <svg width='32' height='32'>
-                  <use href='img/sprite/sprite.svg#social2'></use>
-                </svg>
-              </a>
-            </li>
-            <li class="main-social__item">
-              <a href="#" class="main-social__link">
-                <svg width='32' height='32'>
-                  <use href='img/sprite/sprite.svg#social3'></use>
-                </svg>
-              </a>
-            </li>
-            <li class="main-social__item">
-              <a href="#" class="main-social__link">
-                <svg width='32' height='32'>
-                  <use href='img/sprite/sprite.svg#social4'></use>
-                </svg>
-              </a>
-            </li>
-            <li class="main-social__item">
-              <a href="#" class="main-social__link">
-                <svg width='32' height='32'>
-                  <use href='img/sprite/sprite.svg#social5'></use>
-                </svg>
-              </a>
-            </li>
-            <li class="main-social__item">
-              <a href="#" class="main-social__link">
-                <svg width='32' height='32'>
-                  <use href='img/sprite/sprite.svg#social6'></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-
-          <span class="footer__label">
-            <svg width="94" height="25">
-              <use href='img/sprite/sprite.svg#main-logo'></use>
-            </svg>
-          </span>
-
-        </div>
-
-        <ul class="footer__nav">
-          <li class="footer__nav-item">
-            <a href="#" class="footer__nav-link">
-              Home
-            </a>
-          </li>
-          <li class="footer__nav-item">
-            <a href="#" class="footer__nav-link">
-              Farm
-            </a>
-          </li>
-          <li class="footer__nav-item">
-            <a href="#" class="footer__nav-link">
-              About
-            </a>
-          </li>
-          <li class="footer__nav-item">
-            <a href="#" class="footer__nav-link">
-              Exchange
-            </a>
-          </li>
-          <li class="footer__nav-item">
-            <a href="#" class="footer__nav-link">
-              Launchpools
-            </a>
-          </li>
-          <li class="footer__nav-item">
-            <a href="#" class="footer__nav-link">
-              Team
-            </a>
-          </li>
-          <li class="footer__nav-item">
-            <a href="#" class="footer__nav-link">
-              Liquidity
-            </a>
-          </li>
-          <li class="footer__nav-item">
-            <a href="#" class="footer__nav-link">
-              Referral programm
-            </a>
-          </li>
-          <li class="footer__nav-item">
-            <a href="#" class="footer__nav-link">
-              Audit
-            </a>
-          </li>
-          <li class="footer__nav-item">
-            <a href="#" class="footer__nav-link">
-              History
-            </a>
-          </li>
-          <li class="footer__nav-item">
-            <a href="#" class="footer__nav-link">
-              Docs
-            </a>
-          </li>
-        </ul>
-
-        <form action="#" class="main-form footer__form">
-            <span class="main-form__title">
-              Submit for updates.
-            </span>
-
-            <p class="main-form__descr">
-              Subscribe to get update and notify our exchange and products
-            </p>
-
-            <label class="main-form__label">
-              <input type="email" class="main-form__input" placeholder="Enter your email address">
-              <button class="main-form__button">
-                Send
-              </button>
-            </label>
-
-        </form>
-
-
-
-      </div>
-      <div class="footer-bottom">
-        <span class="footer-bottom__info">
-          FixSwap ©. All rights reserved.
-        </span>
-
-        <ul class="footer-bottom__list">
-          <li class="footer-bottom__item">
-            <a href="#" class="footer-bottom__link">
-              Term of Service
-            </a>
-          </li>
-          <li class="footer-bottom__item">
-            <a href="#" class="footer-bottom__link">
-              Privacy Policy
-            </a>
-          </li>
-        </ul>
-
-      </div>
-    </div> -->
-
-
+    <div class="footer-inner">
+      <h4 class="footer__title">other slides</h4>
+    </div>
   </div>
 </footer>
 
