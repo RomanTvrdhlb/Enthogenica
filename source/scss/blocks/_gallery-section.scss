@@ -1,0 +1,18 @@
+.gallery-section{
+    padding: 160px 0 215px;
+    position: relative;
+
+
+    &::before{
+        position: absolute;
+        content: "";
+        width: 100vw;
+        height: 65px;
+        background-image: url(/img/index/back1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

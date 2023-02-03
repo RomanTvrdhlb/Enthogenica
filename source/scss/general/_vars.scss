@@ -1,0 +1,129 @@
+// --------------- hex to rgba mixin ---------------
+@function HexToRGB($hex) {
+  @return red($hex), green($hex), blue($hex);
+}
+:root {
+// --------------- default global variable ---------------
+  --body-bg: #000000;
+  --body-font-size: 16px;
+  --content-width: 1121px;
+  --content-width-mode: 1337px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --container-width-mode: calc(var(--content-width-mode) + (var(--container-offset) * 2));
+
+// // --------------- default JS variable ---------------
+//   --header-height: 77px;
+// // --------------- default JS tablet variable ---------------
+//   @media (max-width: 1024px) {
+//     --header-height: 66px;
+//   }
+
+// // --------------- default JS small-tablet variable ---------------
+//   @media (max-width: 767px) {
+//     --header-height:87px;
+//   }
+
+// // --------------- default JS mobile variable ---------------
+//   @media (max-width: 576px) {
+//     --header-height:62px;
+//   }
+
+// --------------- default scroll variable ---------------
+  --scrollbar-thumb: #000000;
+  --scrollbar-thumb-hover: #000000;
+  --scrollbar-track:  #474747;
+  --scrollbar-track-hover: #474747;
+  --overlay-bg: rgba(0, 0, 0, 0.5);
+
+// --------------- default slect variable ---------------
+  --select-inner-bg: #404040;
+  --select-inner-border: #FDFDFD; 
+  --select-focus-border: #FDFDFD;
+
+// --------------- default font-family variable ---------------
+  --font-family: "Roboto" , sans-serif; // var(--font-family);
+  --font-family2: "Bebas-Neue" , sans-serif; // var(--font-family2);
+  --font-family3: "RobotoCondensed" , sans-serif; // var(--font-family3);
+
+
+
+// --------------- default text color variable ---------------
+  --burger-cl: #{HexToRGB(#00d655)};
+
+  --cl-a: #{HexToRGB(#ffffff)}; // rgba(var(--cl-a),1.0);
+  --cl-b: #{HexToRGB(#000000)}; // rgba(var(--cl-b),1.0);
+  --cl-c: #{HexToRGB(#474747)}; // rgba(var(--cl-c),1.0);
+  --cl-d: #{HexToRGB(#6b6b6b)}; // rgba(var(--cl-d),1.0);
+
+  --cl-e: #{HexToRGB(#6866F6)}; // rgba(var(--cl-e),1.0);
+  --cl-f: #{HexToRGB(#ABB8EB)}; // rgba(var(--cl-f),1.0);
+  --cl-g: #{HexToRGB(#050E1D)}; // rgba(var(--cl-g),1.0);
+  --cl-h: #{HexToRGB(#081428)}; // rgba(var(--cl-h),1.0);
+  --cl-i: #{HexToRGB(#66F6A8)}; // rgba(var(--cl-i),1.0);
+  --cl-j: #{HexToRGB(#BAC9F0)}; // rgba(var(--cl-j),1.0);
+  --cl-k: #{HexToRGB(#2284f3)}; // rgba(var(--cl-k),1.0);
+  --cl-l: #{HexToRGB(#2DD84A)}; // rgba(var(--cl-l),1.0);
+  --cl-m: #{HexToRGB(#8F9BAB)}; // rgba(var(--cl-m),1.0);
+  --cl-n: #{HexToRGB(#FA305C)}; // rgba(var(--cl-n),1.0);
+
+
+// --------------- default background cl variable ---------------
+  --bg-a: #{HexToRGB(#ffffff)}; // rgba(var(--bg-a),1.0);
+  --bg-b: #{HexToRGB(#000000)}; // rgba(var(--bg-b),1.0);
+  --bg-c: #{HexToRGB(#0a0a0a)}; // rgba(var(--bg-c),1.0);
+  --bg-d: #{HexToRGB(#030303)}; // rgba(var(--bg-d),1.0);
+  --bg-e: #{HexToRGB(#474747)}; // rgba(var(--bg-e),1.0);
+
+  --bg-f: #{HexToRGB(#ABB8EB)}; // rgba(var(--bg-f),1.0);
+  --bg-g: #{HexToRGB(#050E1D)}; // rgba(var(--bg-g),1.0);
+  --bg-h: #{HexToRGB(#081428)}; // rgba(var(--bg-h),1.0);
+  --bg-i: #{HexToRGB(#66F6A8)}; // rgba(var(--bg-i),1.0);
+  --bg-j: #{HexToRGB(#101b38)}; // rgba(var(--bg-j),1.0);
+  --bg-k: #{HexToRGB(#0B172D)}; // rgba(var(--bg-k),1.0);
+  --bg-l: #{HexToRGB(#1C2552)}; // rgba(var(--bg-l),1.0);
+  --bg-m: #{HexToRGB(#102648)}; // rgba(var(--bg-m),1.0);
+  --bg-n: #{HexToRGB(#141525)}; // rgba(var(--bg-n),1.0);
+  --bg-o: #{HexToRGB(#162045)}; // rgba(var(--bg-o),1.0);
+  --bg-p: #{HexToRGB(#18264D)}; // rgba(var(--bg-p),1.0);
+  --bg-q: #{HexToRGB(#2B3878)}; // rgba(var(--bg-q),1.0);
+
+
+
+// --------------- default border cl variable ---------------
+  --br-a: #474747; // var(--br-a);
+
+  --br-b: #cecece; // var(--br-b);
+  --br-c: #6866F6; // var(--br-c);
+  --br-d: #212B62; // var(--br-d);
+  --br-e: #293874; // var(--br-e);
+  --br-f: #546DB3; // var(--br-f);
+  --br-g: #66F6A8; // var(--br-g);
+
+
+// --------------- gradient background cl variable ---------------
+
+  --gradient-a: linear-gradient(180deg, rgba(104, 102, 246, 0) 0%, rgba(104, 102, 246, 0.1) 100%);
+  --gradient-b: linear-gradient(180deg, #6866F6 0%, rgba(104, 102, 246, 0) 100%);
+  --gradient-c: linear-gradient(207.09deg, #6866F6 7.82%, rgba(104, 102, 246, 0) 83.08%);
+  --gradient-d: linear-gradient(0deg, rgba(104, 102, 246, 0) 0%, rgba(104, 102, 246, 0.1) 100%);
+  --gradient-e: linear-gradient(207.09deg, #6866F6 7.82%, rgba(104, 102, 246, 0) 83.08%);
+
+  --gradient-f: linear-gradient(270deg, rgba(104, 102, 246, 0) 0%, rgba(104, 102, 246, 0.45) 100%);
+  --gradient-g: linear-gradient(270deg, rgba(38, 241, 114, 0) 0%, rgba(38, 241, 114, 0.43) 100%);
+  --gradient-h: linear-gradient(270deg, rgba(104, 102, 246, 0) 0%, #FB6939 190%);
+
+
+
+
+
+
+// --------------- icon background cl variable ---------------
+
+  --icon-a: rgb(104, 102, 246); // var(--icon-a);
+  --icon-b: rgb(231, 65, 66); // var(--icon-b);
+  --icon-c: rgb(45, 216, 74); // var(--icon-c);
+  --icon-d: rgb(185, 139, 242); // var(--icon-d);
+  --icon-e: rgb(242, 184, 72); // var(--icon-e);
+  --icon-f: rgb(34, 158, 120); // var(--icon-f);
+}

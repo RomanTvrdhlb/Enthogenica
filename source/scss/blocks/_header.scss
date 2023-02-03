@@ -1,0 +1,35 @@
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  
+}
+
+.header{
+  width: 100%;
+  background-color: rgba(var(--bg-c), 1);
+
+  &__logo {
+    color: rgba(var(--cl-a), 1);
+    font-family: "Bebas Neue Light";
+    font-size: 40px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-transform: uppercase;
+
+    @include for-tablet {
+      display: none;
+    }
+  }
+}
+
+.header-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+ 
+  grid-gap: 40px;
+
+}

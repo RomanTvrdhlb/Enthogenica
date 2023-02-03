@@ -1,0 +1,139 @@
+.select {
+  position: relative;
+  user-select: none;
+
+  &::before {
+    top: -10px;
+    bottom: -10px;
+    z-index: -1;
+    width: 154.61px;
+    position: absolute;
+    content: '';
+    background: rgba(var(--bg-p),1.0);
+    border: 1px solid rgba(84, 109, 179, 0.2);
+    border-bottom: none;
+    border-radius: 12px 12px 0 0;
+    left: calc(Min(1.513vw, 50px) * -1);
+    transition: opacity 0.4s;
+    opacity: 0;
+
+    @media (max-width: 1350px) {
+      left: initial;
+      right: -10px;
+      width: 130px;
+    }
+
+  }
+
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  color: rgba(var(--cl-a),1.0);
+
+  &__header {
+    width: 100%;
+    max-width: 100%;
+    cursor: pointer;
+  }
+
+  &__current {
+    flex-flow: 1;
+    overflow: hidden;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    grid-gap: 5px;
+  }
+
+  &__body {
+    margin-top: 10px;
+    position: absolute;
+    left: calc(Min(1.513vw, 50px) * -1);
+    z-index: 5;
+    max-height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.4s;
+    max-height: 220px;
+    background: var(--bg-c);
+
+    background: rgba(var(--bg-p),1.0);
+    border: 1px solid rgba(84, 109, 179, 0.2);
+    border-radius: 0 0 12px 12px;
+
+    @media (max-width: 1350px) {
+      left: initial;
+      right: -10px;
+      width: 130px;
+    }
+  }
+
+  &__wrapp {
+    // width: 120px;
+    white-space: nowrap;
+    padding: 10px 18px;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
+
+    @media (max-width: 1350px) {
+      padding: 10px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    padding-left: 23px;
+    align-items: center;
+    grid-gap: 5px;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.4s;
+
+    svg {
+      position: absolute;
+      transform: translateX(calc((100% + 8px) * -1));
+
+      @media (max-width: 1350px) {
+        transform: translateX(calc((100% + 15px) * -1));
+      }
+    }
+
+    @media (max-width: 1350px) {
+      text-align: right;
+      justify-content: flex-end;
+      padding: 0;
+    }
+  }
+}
+
+.select.active .select__body {
+  height: auto;
+}
+
+.select.active {
+  z-index: 3;
+
+  .select__body {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  position: relative;
+
+  &::before {
+    opacity: 1;
+  }
+
+}
+
+
+// .select__item:hover {
+//   // background-color: $color--a;
+//   color: var(--color-f);
+// }

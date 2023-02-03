@@ -1,0 +1,10 @@
+footer {
+  background-color: rgba(var(--bg-k),1.0);
+  padding-top: clamp(40px, 5.462vw, 65px);
+
+  @include mobile {
+    padding: 40px 0 60px;
+  }
+}
+
+

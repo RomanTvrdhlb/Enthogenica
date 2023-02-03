@@ -1,0 +1,104 @@
+.choices {
+  margin: 0;
+  background: rgba(var(--bg-c), 1);
+
+  &.is-open {
+    .choices-top__button::before {
+      transform: scaleY(-1);
+    }
+  }
+
+  &::after {
+    display: none !important;
+  }
+}
+
+.choices-top__button {
+  height: 35px;
+  border: 1px solid var(--select-inner-border);
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  position: relative;
+
+  &::before {
+    transition: all .4s;
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    content: '';
+    right: 5px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='7' fill='none'%3E%3Cpath fill='%23FDFDFD' d='m.5 1 1-1L6 4.9 10.5 0l1 1L6 7 .5 1Z'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .choices-button {
+    cursor: pointer;
+    width: 100%;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: -0.005em;
+    color: rgba(var(--color-k),1.0);
+    position: relative;
+
+    &:hover {
+      font-weight: 400;
+    }
+  }
+}
+
+.choices-list {
+  &.choices__list--dropdown {
+    background: rgba(var(--bg-c), 1);
+    z-index: 20;
+    border-radius: 0 !important;
+    .choices-list {
+      max-height: calc(38px * 4);
+      overflow-y: auto;
+    }
+
+    .choices-button {
+      font-family: var(--font-family);
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 100%;
+      letter-spacing: -0.005em;
+      color: rgba(var(--color-k),1.0);
+      transition: font-weight .4s;
+      will-change: font-weight;
+      cursor: pointer;
+
+      &:hover {
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+
+.has-no-results,
+.choices__input {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: -0.005em;
+  color: rgba(var(--color-k),1.0);
+}
+
+.choices__input {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  height: 35px;
+}
+
+.choices__item--choice.choices__placeholder {
+  display: none;
+}

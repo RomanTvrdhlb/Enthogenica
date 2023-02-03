@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="En-en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="Description" content="default">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Enthogenica</title>
+
+    <link rel="preload" href="fonts/Roboto-Light.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Roboto-Regular.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Roboto-Medium.woff" as="font" crossorigin="anonymous">
+
+
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+  <header class="header">
+  <div class="container">
+    <div class="header-box">
+        <a href="index.html" class="header-logo header__logo">
+          <picture>
+            <source media='(max-width: 1024px)' width='34' height='34' srcset='img/sprite/mobile-logo.svg'>
+            <img width='140' height='34' src='img/sprite/logo.svg' alt='image'>
+          </picture>
+        </a>
+
+        <button class="burger">
+          <svg width="18" height="10">
+            <use href='img/sprite/sprite.svg#burger'></use>
+          </svg>
+        </button>
+
+        <div class="header-box__inner">
+          
+
+<nav class="main-nav header-box__nav">
+  <ul class="main-nav__list">
+    <li class="main-nav__item">
+      <a href="index.html" class="main-nav__link">
+        Home
+      </a>
+    </li>
+    <li class="main-nav__item">
+      <a href="#" class="main-nav__link">
+        Trade
+      </a>
+    </li>
+    <li class="main-nav__item">
+      <a href="farming.html" class="main-nav__link">
+        Farming
+      </a>
+    </li>
+    <li class="main-nav__item">
+      <a href="Launchpools.html" class="main-nav__link">
+        Launchpools
+      </a>
+    </li>
+    <li class="main-nav__item">
+      <a href="referral.html" class="main-nav__link">
+        Referral program
+      </a>
+    </li>
+    <li class="main-nav__item">
+      <span class="main-nav__link">
+        More
+        <svg width='24' height='24'>
+          <use href='img/sprite/sprite.svg#arrow-bottom'></use>
+        </svg>
+      </span>
+
+      <ul class="hidden-list">
+        <li class="hidden-list__item">
+          <a href="token.html" class="hidden-list__link">
+            <svg width='24' height='24'>
+              <use href='img/sprite/sprite.svg#hidden'></use>
+            </svg>
+            About
+          </a>
+        </li>
+        <li class="hidden-list__item">
+          <a href="team.html" class="hidden-list__link">
+            <svg width='24' height='24'>
+              <use href='img/sprite/sprite.svg#hidden2'></use>
+            </svg>
+            Team
+          </a>
+        </li>
+        <li class="hidden-list__item">
+          <a href="#" class="hidden-list__link">
+            <svg width='24' height='24'>
+              <use href='img/sprite/sprite.svg#hidden3'></use>
+            </svg>
+            Docs
+          </a>
+        </li>
+        <li class="hidden-list__item">
+          <a href="#" class="hidden-list__link">
+            <svg width='24' height='24'>
+              <use href='img/sprite/sprite.svg#hidden4'></use>
+            </svg>
+            Audit
+          </a>
+        </li>
+      </ul>
+
+    </li>
+
+  </ul>
+</nav>
+
+
+          <a href="#" class="header-box__logo">
+            <svg width='93' height='25'>
+              <use href='img/sprite/sprite.svg#main-logo'></use>
+            </svg>
+          </a>
+        </div>
+
+        <button class="wallet-button">
+          <svg width='24' height='24'>
+            <use href='img/sprite/sprite.svg#wallet'></use>
+          </svg>
+
+          <span>
+            0x04...B233
+          </span>
+        </button>
+
+
+
+
+
+    </div>
+  </div>
+
+  <div class="mobile-menu">
+    <div class="mobile-menu__header">
+      <button class="burger">
+        <svg width="18" height="10">
+          <use href='img/sprite/sprite.svg#burger'></use>
+        </svg>
+      </button>
+
+      <button class="mobile-menu__btn main-button">
+        Connect wallet
+        <svg width='18' height='18'>
+          <use href='img/sprite/sprite.svg#main-arrow '></use>
+        </svg>
+      </button>
+
+      <a href="index.html" class="header-logo mobile-menu__logo">
+        <img width='34' height='34' srcset='img/sprite/mobile-logo.svg'>
+      </a>
+    </div>
+
+    <div class="mobile-menu__body">
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item">
+            <a href="index.html" class="mobile-menu__link">
+              Home
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">
+              Trade
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="farming.html" class="mobile-menu__link">
+              Farming
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="Launchpools.html" class="mobile-menu__link">
+              Launchpools
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="referral.html" class="mobile-menu__link">
+              Referral program
+            </a>
+          </li>
+          <li class="mobile-menu__item" data-accordion-init>
+            <span class="mobile-menu__link" data-id="1">
+              More
+              <svg width='24' height='24'>
+                <use href='img/sprite/sprite.svg#arrow-bottom'></use>
+              </svg>
+            </span>
+
+            <ul class="mobile-hidden panel" data-content="1">
+              <li class="mobile-hidden__item">
+                <a href="token.html" class="mobile-menu__link">
+                  About
+                </a>
+              </li>
+              <li class="mobile-hidden__item">
+                <a href="team.html" class="mobile-menu__link">
+                  Team
+                </a>
+              </li>
+              <li class="mobile-hidden__item">
+                <a href="#" class="mobile-menu__link">
+                  Docs
+                </a>
+              </li>
+              <li class="mobile-hidden__item">
+                <a href="#" class="mobile-menu__link">
+                  Audit
+                </a>
+              </li>
+            </ul>
+          </li>
+
+
+        </ul>
+
+        <ul class="main-social">
+          <li class="main-social__item">
+            <a href="#" class="main-social__link">
+              <svg width='38' height='38'>
+                <use href='img/sprite/sprite.svg#social'></use>
+              </svg>
+            </a>
+          </li>
+          <li class="main-social__item">
+            <a href="#" class="main-social__link">
+              <svg width='38' height='38'>
+                <use href='img/sprite/sprite.svg#social2'></use>
+              </svg>
+            </a>
+          </li>
+          <li class="main-social__item">
+            <a href="#" class="main-social__link">
+              <svg width='38' height='38'>
+                <use href='img/sprite/sprite.svg#social3'></use>
+              </svg>
+            </a>
+          </li>
+          <li class="main-social__item">
+            <a href="#" class="main-social__link">
+              <svg width='38' height='38'>
+                <use href='img/sprite/sprite.svg#social4'></use>
+              </svg>
+            </a>
+          </li>
+          <li class="main-social__item">
+            <a href="#" class="main-social__link">
+              <svg width='38' height='38'>
+                <use href='img/sprite/sprite.svg#social5'></use>
+              </svg>
+            </a>
+          </li>
+          <li class="main-social__item">
+            <a href="#" class="main-social__link">
+              <svg width='38' height='38'>
+                <use href='img/sprite/sprite.svg#social6'></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+        <span class="mobile-menu__label">
+          <svg width="94" height="25">
+            <use href='img/sprite/sprite.svg#main-logo'></use>
+          </svg>
+        </span>
+    </div>
+
+  </div>
+
+</header>
+
+
+  <main>
+    <section class="descr-section descr-section--token">
+      <div class="container round-bg">
+        <div class="descr-section__box">
+
+          <div class="descr-section__inner">
+            <div class="descr-section__content">
+              <h2 class="descr-section__title">
+                What is <span class="violet-text">FLS Token</span>?
+              </h2>
+
+              <p class="descr-section__descr">
+                <span class="green-text">Earn up to 20%</span> from friends’ swap commission on Biswap and 5% from their earnings on Farms & Launchpooфls
+              </p>
+            </div>
+
+            <button class="main-button descr-section__button">
+              Buy $FLS
+              <svg width='24' height='24'>
+                <use href='img/sprite/sprite.svg#main-arrow'></use>
+              </svg>
+            </button>
+          </div>
+
+
+
+          <div class="descr-section__image">
+            <picture>
+              <source type='image/webp' srcset='img/token-hero.webp'>
+              <img loading='lazy' width='702' height='533' src='img/token-hero.png' alt='image'>
+            </picture>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+
+    <section class="about-fls">
+      <div class="container">
+        <div class="about-fls__box">
+          <div class="about-fls__inner">
+            <div class="main-top">
+              <h2 class="main-top__title">
+                About FLS Token
+              </h2>
+
+              <p class="main-top__text">
+                A token contract is simply a smart contract. A BEP-20 token contract is defined by the contract’s address and the total supply of tokens available to it but has several optional items that are usually provided as well to provide more detail to users. These are the token’s name, its symbol, and the number of decimals. BEP-20: the most widespread token standard for crypto assets on BNB Chain.
+                <br><br>
+                The factory design pattern is a pretty common pattern used in programming. The idea is simple, instead of creating objects directly, you have the Factory that creates objects for you. In the case <br>
+                of a Factory smart contract, an object is a smart contract, so a factory will deploy ne contracts.
+              </p>
+            </div>
+
+            <div class="about-fls__buttons">
+              <button class="main-button about-fls__button">
+                Buy $FLS
+                <svg width='24' height='24'>
+                  <use href='img/sprite/sprite.svg#main-arrow'></use>
+                </svg>
+              </button>
+              <button class="main-button main-button--transparent about-fls__button">
+                Tokenomics
+              </button>
+            </div>
+
+          </div>
+
+          <div class="about-card">
+            <span class="about-card__title">
+              Fls Token Metric
+            </span>
+
+            <ul class="about-card__list">
+              <li class="about-card__item">
+                <span class="about-card__name">
+                  Price:
+                </span>
+                <span class="about-card__value">
+                  <b class="green-text">
+                    $0,21
+                  </b>
+                </span>
+              </li>
+              <li class="about-card__item">
+                <span class="about-card__name">
+                  Ticker Symbol:
+                </span>
+                <span class="about-card__value">
+                  <svg width='24' height='24'>
+                    <use href='img/sprite/sprite.svg#icon'></use>
+                  </svg>
+                    <b class="violet-text">
+                      FLS
+                    </b>
+                </span>
+              </li>
+              <li class="about-card__item">
+                <span class="about-card__name">
+                  Chain:
+                </span>
+                <span class="about-card__value">
+                  BNB (Bep-20)
+                </span>
+              </li>
+              <li class="about-card__item">
+                <span class="about-card__name">
+                  Contract adress:
+                </span>
+                <span class="about-card__value">
+                  <b class="violet-text">
+                    096..0dD1
+                  </b>
+                </span>
+              </li>
+              <li class="about-card__item">
+                <span class="about-card__name">
+                  Max supply:
+                </span>
+                <span class="about-card__value">
+                    0,21
+                </span>
+              </li>
+              <li class="about-card__item">
+                <span class="about-card__name">
+                  Total supply:
+                </span>
+                <span class="about-card__value">
+                    FLS
+                </span>
+              </li>
+              <li class="about-card__item">
+                <span class="about-card__name">
+                  Circulation Supply:
+                </span>
+                <span class="about-card__value">
+                  BNB (Bep-20)
+                </span>
+              </li>
+              <li class="about-card__item">
+                <span class="about-card__name">
+                  Burned:
+                </span>
+                <span class="about-card__value">
+                  9328248
+                </span>
+              </li>
+            </ul>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="about-token">
+      <div class="container">
+        <div class="about-token__box">
+          <div class="about-token__top main-top">
+            <h2 class="main-top__title">
+              About <span class="violet-text">CryptoDefi Token</span>
+            </h2>
+
+            <p class="main-top__text">
+              BSW is a popular utility token with a huge user base that supports the Biswap ecosystem. Apart from being able to trade BSW token, you can also make use of a wide variety additional benefits that come along with it.
+            </p>
+          </div>
+
+          <ul class="about-token__list about-list">
+            <li class="about-list__item">
+              <span class="about-list__value">
+                45%
+              </span>
+              <span class="about-list__name">
+                Farms / Launchpools
+              </span>
+            </li>
+            <li class="about-list__item">
+              <span class="about-list__value">
+                8%
+              </span>
+              <span class="about-list__name">
+                SAFU
+              </span>
+            </li>
+            <li class="about-list__item">
+              <span class="about-list__value">
+                13%
+              </span>
+              <span class="about-list__name">
+                Referral program
+              </span>
+            </li>
+            <li class="about-list__item">
+              <span class="about-list__value">
+                13%
+              </span>
+              <span class="about-list__name">
+                Investments Faund
+              </span>
+            </li>
+            <li class="about-list__item">
+              <span class="about-list__value">
+                9%
+              </span>
+              <span class="about-list__name">
+                Team
+              </span>
+            </li>
+            <li class="about-list__item">
+              <span class="about-list__value">
+                9%
+              </span>
+              <span class="about-list__name">
+                Team
+              </span>
+            </li>
+          </ul>
+
+          <div class="about-token__diagram diagram">
+            <div class="diagram__inner">
+              <div class="diagram__values">
+                <span class="diagram__value">
+                  600<b>m</b>
+                </span>
+                <span class="diagram__name">
+                  max supply
+                </span>
+              </div>
+
+              <svg width="176" height="13">
+                <use href='img/sprite/sprite.svg#lines'></use>
+              </svg>
+            </div>
+            <div class="diagram__image">
+              <picture>
+                <source type='image/webp' srcset='img/diagram.webp'>
+                <img loading='lazy' width='430' height='430' src='img/diagram.png' alt='image'>
+              </picture>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class='slider-line swiper-container'>
+      <ul class='swiper-wrapper'>
+        <li class='swiper-slide'>
+          Flixswap
+        </li>
+        <li class='swiper-slide'>
+          Flixswap
+        </li>
+        <li class='swiper-slide'>
+          Flixswap
+        </li>
+        <li class='swiper-slide'>
+          Flixswap
+        </li>
+        <li class='swiper-slide'>
+          Flixswap
+        </li>
+        <li class='swiper-slide'>
+          Flixswap
+        </li>
+        <li class='swiper-slide'>
+          Flixswap
+        </li>
+        <li class='swiper-slide'>
+          Flixswap
+        </li>
+      </ul>
+    </section>
+
+    <section class="burning-section">
+      <div class="container">
+        <div class="burning-section__box">
+          <div class="burning-section__inner">
+            <div class="main-top">
+              <h2 class="main-top__title">
+                FLS Burning Mechanism
+              </h2>
+
+              <p class="main-top__text">
+                Biswap will continue decreasing the total supply of BSW tokens with the help of a weekly burning mechanism, which should in turn increase the value
+              </p>
+            </div>
+
+            <ul class="burning-list">
+              <li class="burning-list__item">
+                <div class="burning-list__content">
+                  <span class="burning-list__title">
+                    Total supply:
+                  </span>
+                  <span class="burning-list__value">
+                    100 000 FLS
+                  </span>
+                </div>
+
+                <div class="burning-list__icon">
+                  <svg width='152' height='12'>
+                    <use href='img/sprite/sprite.svg#lines'></use>
+                  </svg>
+                </div>
+
+              </li>
+              <li class="burning-list__item">
+                <div class="burning-list__content">
+                  <span class="burning-list__title">
+                    Total burnt amount:
+                  </span>
+                  <span class="burning-list__value">
+                    100 000 FLS
+                  </span>
+                </div>
+
+                <div class="burning-list__icon">
+                  <svg width='152' height='12'>
+                    <use href='img/sprite/sprite.svg#lines'></use>
+                  </svg>
+                </div>
+
+              </li>
+            </ul>
+
+          </div>
+
+          <div class="burning-section__image">
+            <picture>
+              <source type='image/webp' srcset='img/burning-hero.webp'>
+              <img loading='lazy' width='533' height='533' src='img/burning-hero.png' alt='image'>
+            </picture>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+  </main>
+
+  <footer>
+  <div class="container">
+
+    <div class="footer-inner">
+      <div class="footer">
+        <div class="footer__coll">
+          <a href="#" class="footer__logo">
+            <svg width='141' height='34'>
+              <use href='img/sprite/sprite.svg#logo'></use>
+            </svg>
+          </a>
+
+          <ul class="main-social footer__social">
+            <li class="main-social__item">
+              <a href="#" class="main-social__link">
+                <svg width='32' height='32'>
+                  <use href='img/sprite/sprite.svg#social'></use>
+                </svg>
+              </a>
+            </li>
+            <li class="main-social__item">
+              <a href="#" class="main-social__link">
+                <svg width='32' height='32'>
+                  <use href='img/sprite/sprite.svg#social2'></use>
+                </svg>
+              </a>
+            </li>
+            <li class="main-social__item">
+              <a href="#" class="main-social__link">
+                <svg width='32' height='32'>
+                  <use href='img/sprite/sprite.svg#social3'></use>
+                </svg>
+              </a>
+            </li>
+            <li class="main-social__item">
+              <a href="#" class="main-social__link">
+                <svg width='32' height='32'>
+                  <use href='img/sprite/sprite.svg#social4'></use>
+                </svg>
+              </a>
+            </li>
+            <li class="main-social__item">
+              <a href="#" class="main-social__link">
+                <svg width='32' height='32'>
+                  <use href='img/sprite/sprite.svg#social5'></use>
+                </svg>
+              </a>
+            </li>
+            <li class="main-social__item">
+              <a href="#" class="main-social__link">
+                <svg width='32' height='32'>
+                  <use href='img/sprite/sprite.svg#social6'></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+
+          <span class="footer__label">
+            <svg width="94" height="25">
+              <use href='img/sprite/sprite.svg#main-logo'></use>
+            </svg>
+          </span>
+
+        </div>
+
+        <ul class="footer__nav">
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">
+              Home
+            </a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">
+              Farm
+            </a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">
+              About
+            </a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">
+              Exchange
+            </a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">
+              Launchpools
+            </a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">
+              Team
+            </a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">
+              Liquidity
+            </a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">
+              Referral programm
+            </a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">
+              Audit
+            </a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">
+              History
+            </a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">
+              Docs
+            </a>
+          </li>
+        </ul>
+
+        <form action="#" class="main-form footer__form">
+            <span class="main-form__title">
+              Submit for updates.
+            </span>
+
+            <p class="main-form__descr">
+              Subscribe to get update and notify our exchange and products
+            </p>
+
+            <label class="main-form__label">
+              <input type="email" class="main-form__input" placeholder="Enter your email address">
+              <button class="main-form__button">
+                Send
+              </button>
+            </label>
+
+        </form>
+
+
+
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-bottom__info">
+          FixSwap ©. All rights reserved.
+        </span>
+
+        <ul class="footer-bottom__list">
+          <li class="footer-bottom__item">
+            <a href="#" class="footer-bottom__link">
+              Term of Service
+            </a>
+          </li>
+          <li class="footer-bottom__item">
+            <a href="#" class="footer-bottom__link">
+              Privacy Policy
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
+
+  </div>
+</footer>
+
+  
+<div class="overlay" data-overlay>
+  <div class="modal" data-popup="Login">
+      <div class="modal__box" role="dialog" aria-modal="true">
+        <button class="close modal__close" aria-label="Закрыть модальное окно">
+          <svg width='24' height='24'>
+            <use href='img/sprite/sprite.svg#close'></use>
+          </svg>
+        </button>
+
+        <div class="modal__top">
+          <h2 class="modal__title">
+            Login
+          </h2>
+        </div>
+
+        <form action="#" class="modal__form">
+
+          <div class="modal__form-wrapper">
+            <legend class="modal__legend">
+              <svg width='18' height='18'>
+                <use href='img/sprite/sprite.svg#at-sign'></use>
+              </svg>
+              Email:
+            </legend>
+            <label for="#" class="modal__label">
+              <input type="email" class="modal__input" placeholder="email" value="bortnovskiv@ukr.net">
+            </label>
+          </div>
+
+          <div class="modal__form-wrapper">
+            <legend class="modal__legend">
+              <svg width='18' height='18'>
+                <use href='img/sprite/sprite.svg#lock'></use>
+              </svg>
+              Password:
+            </legend>
+            <label for="#" class="modal__label">
+              <input type="password" class="modal__input" placeholder="Enter you pass">
+            </label>
+          </div>
+          <button class="modal__link" data-btn-inner="Forget" aria-label="Открыть модальное окно">
+            Forget password?
+          </button>
+
+          <div class="modal__captcha">
+            <picture>
+              <img width='366' height='76' src='img/captcha.png' alt='image'>
+            </picture>
+          </div>
+
+          <button class="modal__button">
+            Login
+          </button>
+
+        </form>
+
+      </div>
+  </div>
+  <div class="modal" data-popup="Create_account">
+    <div class="modal__box" role="dialog" aria-modal="true">
+      <button class="close modal__close" aria-label="Закрыть модальное окно">
+        <svg width='24' height='24'>
+          <use href='img/sprite/sprite.svg#close'></use>
+        </svg>
+      </button>
+
+
+      <div class="modal__top">
+        <h2 class="modal__title">
+          Create account
+        </h2>
+      </div>
+
+      <form action="#" class="modal__form">
+        <div class="modal__form-wrapper">
+          <legend class="modal__legend">
+            <img src="img/sprite/login.svg" alt=" icon">
+            Login:
+          </legend>
+          <label for="#" class="modal__label">
+            <input type="email" class="modal__input" placeholder="email" value="bortnovskiv@ukr.net">
+          </label>
+        </div>
+        <div class="modal__form-wrapper">
+          <legend class="modal__legend">
+            <svg width='18' height='18'>
+              <use href='img/sprite/sprite.svg#at-sign'></use>
+            </svg>
+            Email:
+          </legend>
+          <label for="#" class="modal__label">
+            <input type="email" class="modal__input" placeholder="email" value="bortnovskiv@ukr.net">
+          </label>
+        </div>
+        <div class="modal__form-wrapper">
+          <legend class="modal__legend">
+            <svg width='18' height='18'>
+              <use href='img/sprite/sprite.svg#lock'></use>
+            </svg>
+            Password:
+          </legend>
+          <label for="#" class="modal__label">
+            <input type="password" class="modal__input" placeholder="Enter you pass">
+          </label>
+        </div>
+        <div class="modal__form-wrapper">
+          <legend class="modal__legend">
+            <svg width='18' height='18'>
+              <use href='img/sprite/sprite.svg#lock'></use>
+            </svg>
+            Confirm password:
+          </legend>
+          <label for="#" class="modal__label">
+            <input type="password" class="modal__input" placeholder="Confirm your pass">
+          </label>
+        </div>
+        <button class="modal__link" data-btn-inner="Login">
+          I have account
+        </button>
+
+        <div class="modal__captcha">
+          <picture>
+            <img width='366' height='76' src='img/captcha.png' alt='image'>
+          </picture>
+        </div>
+        <button class="modal__button">
+          Create account
+        </button>
+      </form>
+
+    </div>
+  </div>
+  <div class="modal" data-popup="Forget">
+    <div class="modal__box" role="dialog" aria-modal="true">
+      <button class="close modal__close" aria-label="Закрыть модальное окно">
+        <svg width='24' height='24'>
+          <use href='img/sprite/sprite.svg#close'></use>
+        </svg>
+      </button>
+      <div class="modal__top">
+        <h2 class="modal__title">
+          Forget password?
+        </h2>
+        <p class="modal__subtitle">
+          Enter your email and we will send you a recovery link
+        </p>
+      </div>
+
+      <form action="#" class="modal__form">
+        <div class="modal__form-wrapper">
+          <legend class="modal__legend">
+            <svg width='18' height='18'>
+              <use href='img/sprite/sprite.svg#at-sign'></use>
+            </svg>
+            Email:
+          </legend>
+          <label for="#" class="modal__label">
+            <input type="email" class="modal__input" placeholder="email" value="bortnovskiv@ukr.net">
+          </label>
+        </div>
+        <div class="modal__captcha">
+          <picture>
+            <img width='366' height='76' src='img/captcha.png' alt='image'>
+          </picture>
+        </div>
+        <button class="modal__button">
+          Confirm
+        </button>
+      </form>
+
+    </div>
+  </div>
+  <div class="modal" data-popup="Withdraw">
+    <div class="modal__box" role="dialog" aria-modal="true">
+      <button class="close modal__close" aria-label="Закрыть модальное окно">
+        <svg width='24' height='24'>
+          <use href='img/sprite/sprite.svg#close'></use>
+        </svg>
+      </button>
+
+      <div class="modal__top">
+        <h2 class="modal__title">
+          Login
+        </h2>
+      </div>
+
+      <form action="#" class="modal__form">
+
+        <div class="modal__form-wrapper">
+          <legend class="modal__legend">
+            <img width="24" height="24" src="img/sprite/dash2.svg" alt="icon">
+            Amount:
+          </legend>
+          <label for="#" class="modal__label modal__label--icon">
+            <input type="number" class="modal__input" placeholder="email" value="0.0000043">
+
+            <span class="modal__icon">
+              <svg width="30" height="30">
+                <use href="img/sprite/sprite.svg#bitcoin"></use>
+              </svg>
+            </span>
+          </label>
+        </div>
+
+        <div class="modal__form-wrapper">
+          <legend class="modal__legend">
+            <img width="24" height="24" src="img/sprite/dash3.svg" alt="icon">
+            You wallet:
+          </legend>
+          <label for="#" class="modal__label">
+            <input type="password" class="modal__input" placeholder="Enter you wallet:">
+          </label>
+        </div>
+
+        <div class="modal__inner">
+          <div class="modal__value">
+
+            <svg width="30" height="30">
+              <use href="img/sprite/sprite.svg#bitcoin"></use>
+            </svg>
+
+            0.00027383 BTC
+          </div>
+
+          <a href="#" class="modal__link">
+            Aviable to withdraw
+          </a>
+
+          <button class="modal__button" data-btn-inner="Successful">
+            Withdraw
+          </button>
+        </div>
+
+
+      </form>
+
+    </div>
+  </div>
+  <div class="modal" data-popup="Confirm">
+    <div class="modal__box" role="dialog" aria-modal="true">
+      <button class="close modal__close" aria-label="Закрыть модальное окно">
+        <svg width='24' height='24'>
+          <use href='img/sprite/sprite.svg#close'></use>
+        </svg>
+      </button>
+      <div class="modal__top">
+        <h2 class="modal__title">
+          Do you confirm the exchange of cryptocurrency to USDT (TRC-20)?
+        </h2>
+        <p class="modal__subtitle">
+          After confirming this operation, you will not be able to exchange USDT (TRC-20) for cryptocurrency back.
+        </p>
+      </div>
+
+      <form action="#" class="modal__form">
+        <button class="modal__button">
+          Yes, I confirm the exchange
+        </button>
+        <button class="modal__button modal__button--transparent">
+          Cancel
+        </button>
+      </form>
+
+    </div>
+  </div>
+  <div class="modal" data-popup="Successful">
+    <div class="modal__box" role="dialog" aria-modal="true">
+      <button class="close modal__close" aria-label="Закрыть модальное окно">
+        <svg width='24' height='24'>
+          <use href='img/sprite/sprite.svg#close'></use>
+        </svg>
+      </button>
+      <div class="modal__top">
+        <div class="modal__image">
+          <picture>
+            <source type='image/webp' srcset='img/modal-image.webp'>
+            <img width='250' height='302' src='img/modal-image.png' alt='image'>
+          </picture>
+        </div>
+        <h2 class="modal__title modal__title--min">
+          Application successful!
+        </h2>
+        <p class="modal__subtitle">
+          The withdrawal is done manually, it takes from 5 <br> to 15 minutes during business hours!
+        </p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+</body>
+<script src="js/main.js"></script>
+
+</html>

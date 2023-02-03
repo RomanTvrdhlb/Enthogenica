@@ -1,0 +1,67 @@
+.main-title {
+  color: rgba(var(--cl-a), 1);
+  font-family: var(--font-family2);
+  font-size: clamp(60px, 8.921vw, 100px);
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 80%;
+  text-align: left;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.main-phrase {
+  color: rgba(var(--cl-d), 1);
+  font-family: var(--font-family3);
+  font-size: 13px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.main-button {
+  background-color: transparent;
+  color: rgba(var(--cl-a), 1);
+  font-family: var(--font-family);
+  font-size: 13px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: left;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 112px;
+  height: 40px;
+  border: 1px solid var(--br-a);
+  background-color: transparent;
+  transition: all 0.4s;
+
+  &:hover {
+    transform: scale(1.01);
+    color: rgba(var(--cl-c), 1);
+  }
+}
+
+p{
+color: rgba(var(--cl-a),1.0);
+font-family: var(--font-family);
+font-size: 14px;
+font-weight: 300;
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+text-align: left;
+}
+
+.main-bold{
+  font-family: var(--font-family);
+  color: rgba(var(--cl-a),1.0);
+  font-weight: 700;
+}
