@@ -223,13 +223,17 @@ observSections.forEach(section => observer.observe(section));
 mainLinks.map(function (link) {
   link.addEventListener('click', function (e) {
     e.preventDefault();
+    (0,_functions_customFunctions__WEBPACK_IMPORTED_MODULE_0__.removeClassInArray)(mainLinks, 'active');
+    (0,_functions_customFunctions__WEBPACK_IMPORTED_MODULE_0__.addCustomClass)(link, 'active');
     const id = e.target.getAttribute('href').replace('#', '');
     let headerHeight = header.clientHeight;
     window.scrollTo({
       top: document.getElementById(id).offsetTop - headerHeight,
       behavior: "smooth"
     });
-    window.pageYOffset = headerHeight ? (0,_functions_customFunctions__WEBPACK_IMPORTED_MODULE_0__.removeCustomClass)(link, 'active') : '';
+
+    // window.pageYOffset <= headerHeight ?
+    // removeCustomClass(link, 'active') : '';
   });
 });
 

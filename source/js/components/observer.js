@@ -24,16 +24,21 @@ observSections.forEach((section) => observer.observe(section))
 
 mainLinks.map(function(link){
   link.addEventListener('click', function(e){
-    e.preventDefault();
-    const id = e.target.getAttribute('href').replace('#', '');
-    let headerHeight = header.clientHeight;
+      e.preventDefault();
+      removeClassInArray(mainLinks, 'active');
+      addCustomClass(link, 'active');
+      const id = e.target.getAttribute('href').replace('#', '');
+      let headerHeight = header.clientHeight;
+      
+      window.scrollTo({
+        top: document.getElementById(id).offsetTop - (headerHeight),
+        behavior:"smooth"
+      })
     
-    window.scrollTo({
-      top: document.getElementById(id).offsetTop - (headerHeight),
-      behavior:"smooth"
-    })
     
-    window.pageYOffset = headerHeight ?
-    removeCustomClass(link, 'active') : '';
+  
+    // window.pageYOffset <= headerHeight ?
+    // removeCustomClass(link, 'active') : '';
   })
 })
+
