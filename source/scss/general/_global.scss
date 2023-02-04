@@ -33,7 +33,7 @@ body {
 }
 
 main {
-  // padding-top: var(--header-height);
+  padding-top: var(--header-height);
   transition: padding-top .5s linear;
   min-width: 0 !important;
 }
@@ -64,93 +64,93 @@ main {
 
 
 
-.round-bg {
-  position: relative;
-  z-index: 0;
+// .round-bg {
+//   position: relative;
+//   z-index: 0;
 
-  &::before, &:after {
-    content: '';
-    position: absolute;
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: -1;
-    pointer-events: none;
-  }
+//   &::before, &:after {
+//     content: '';
+//     position: absolute;
+//     background-size: contain;
+//     background-repeat: no-repeat;
+//     z-index: -1;
+//     pointer-events: none;
+//   }
 
-  &::before {
-    background-image: var(--round-right);
-    width: clamp(233px, 27.227vw, 324px);
-    height: clamp(218px, 17.311vw, 206px);
-    right: 0%;
-    top: 50%;
-    transform: translate(80%,-50%);
-    filter: blur(100px);
-    opacity: .6;
+//   &::before {
+//     background-image: var(--round-right);
+//     width: clamp(233px, 27.227vw, 324px);
+//     height: clamp(218px, 17.311vw, 206px);
+//     right: 0%;
+//     top: 50%;
+//     transform: translate(80%,-50%);
+//     filter: blur(100px);
+//     opacity: .6;
 
-  }
+//   }
 
-  &::after {
-    background-image: var(--round-left);
-    width: clamp(327px, 32.437vw, 386px);
-    height: clamp(301px, 29.916vw, 356px);
-    left: 0;
-    top: 50%;
-    transform: translate(-90%, -50%);
-    filter: blur(10px);
-    opacity: .3;
+//   &::after {
+//     background-image: var(--round-left);
+//     width: clamp(327px, 32.437vw, 386px);
+//     height: clamp(301px, 29.916vw, 356px);
+//     left: 0;
+//     top: 50%;
+//     transform: translate(-90%, -50%);
+//     filter: blur(10px);
+//     opacity: .3;
 
-    @include laptop {
-      transform: translate(-60%, -50%);
-    }
-  }
-}
+//     @include laptop {
+//       transform: translate(-60%, -50%);
+//     }
+//   }
+// }
 
 
-.has-bg {
-  .container:nth-child(1) {
-    padding-top: clamp(46px, 6.05vw, 72px);
-    padding-bottom: clamp(46px, 6.05vw, 72px);
-    background-image: url(../img/logo-bg.svg);
-    background-position: 81% center;
-    background-repeat: no-repeat;
-    background-size: clamp(126px, 19.748vw, 235px);
+// .has-bg {
+//   .container:nth-child(1) {
+//     padding-top: clamp(46px, 6.05vw, 72px);
+//     padding-bottom: clamp(46px, 6.05vw, 72px);
+//     background-image: url(../img/logo-bg.svg);
+//     background-position: 81% center;
+//     background-repeat: no-repeat;
+//     background-size: clamp(126px, 19.748vw, 235px);
 
-    @include mobile {
-      background-position: 100% top;
-    }
-  }
-}
+//     @include mobile {
+//       background-position: 100% top;
+//     }
+//   }
+// }
 
-.dark-section {
-  background: rgba(var(--bg-n),1.0);
-  position: relative;
-  z-index: 0;
+// .dark-section {
+//   background: rgba(var(--bg-n),1.0);
+//   position: relative;
+//   z-index: 0;
 
-  &::before, &:after {
-    content: '';
-    position: absolute;
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: -1;
-    pointer-events: none;
-    width: 313px;
-    height: 984px;
-    top: 50%;
-    transform: translateY(-50%);
-  }
+//   &::before, &:after {
+//     content: '';
+//     position: absolute;
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     z-index: -1;
+//     pointer-events: none;
+//     width: 313px;
+//     height: 984px;
+//     top: 50%;
+//     transform: translateY(-50%);
+//   }
 
-  &::before {
-    background-image: var(--dark-left);
-    left: 0;
-    background-position: left;
-  }
-  &::after {
-    transform: scaleX(-1) translateY(-50%);
-    right: 0;
-    background-image: var(--dark-left);
-    background-position: right;
-  }
-}
+//   &::before {
+//     background-image: var(--dark-left);
+//     left: 0;
+//     background-position: left;
+//   }
+//   &::after {
+//     transform: scaleX(-1) translateY(-50%);
+//     right: 0;
+//     background-image: var(--dark-left);
+//     background-position: right;
+//   }
+// }
 
 *,
 *::after,

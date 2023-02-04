@@ -13,11 +13,12 @@ export default {
   modalsButton: [...document.querySelectorAll("[data-btn-modal]")],
   // innerButtonModal: [...document.querySelectorAll("[data-btn-inner]")],
   // customSelect: [...document.querySelectorAll("[data-select]")],
-  burger: document.querySelector('.header .burger'),
+  burger: document.querySelector('.burger'),
   mobileBurger: document.querySelector('.mobile-menu .burger'),
   // mobileMenu: document.querySelector('.header-box__nav'),
   header: document.querySelector(".header"),
-
+  mainLinks: [...document.querySelectorAll('.main-nav__link')],
+  observSections: [...document.querySelectorAll('.section-observe')],
   // default variables
 
   footerLabel: document.querySelector('.footer__label'),
@@ -26,7 +27,7 @@ export default {
 
 
   mobileMenu: document.querySelector('.mobile-menu'),
-  mainLinks: [...document.querySelectorAll('a.mobile-menu__link')],
+  
   defaultSliders: [...document.querySelectorAll('.slider-line')],
   partnersSliders: document.querySelector('.partners-box__slider'),
   partnersBox: document.querySelector('.partners-box'),
@@ -43,7 +44,7 @@ export default {
 
   // logoSlider: [...document.querySelectorAll('.payment-slider .swiper-container')],
   // mainLinks: [...document.querySelectorAll('.main-nav__link')],
-  // observSections: [...document.querySelectorAll('.section-observe')],
+ 
   // formsSecond: '.contacts-section__form',
   // formsFirst: '.contact-section__form',
 }

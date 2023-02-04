@@ -3,6 +3,7 @@ import vars from '../_vars';
 
 const {header,mainLinks,observSections} = vars
 
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {

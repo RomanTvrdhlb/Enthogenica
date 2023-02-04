@@ -12,7 +12,7 @@ header {
 
   &__logo {
     color: rgba(var(--cl-a), 1);
-    font-family: "Bebas Neue Light";
+    font-family: var(--font-family2);
     font-size: 40px;
     font-weight: 400;
     font-style: normal;
@@ -20,7 +20,7 @@ header {
     line-height: normal;
     text-transform: uppercase;
 
-    @include for-tablet {
+    @include for-small-tablet {
       display: none;
     }
   }
@@ -30,7 +30,16 @@ header {
   display: flex;
   align-items: center;
   justify-content: flex-start;
- 
   grid-gap: 40px;
 
+  @include small-tablet{
+    justify-content: space-between;
+  }
+
+  &__inner{
+    display: flex;
+    @include small-tablet{
+      display: none;
+    }
+  }
 }

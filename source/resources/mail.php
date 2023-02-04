@@ -9,7 +9,7 @@ $file = $_FILES['file'];
 
 $c = true;
 // Формирование самого письма
-$title = "Заявка с Rahmet";
+$title = "Заявка с Enthogenica";
 foreach ( $_POST as $key => $value ) {
   if ( $value != "" && $key != "project_name" && $key != "admin_email" && $key != "form_subject" ) {
     $body .= "
@@ -38,10 +38,10 @@ try {
   $mail->SMTPSecure = 'ssl';
   $mail->Port       = 465;
 
-  $mail->setFrom('natc999@gmail.com', 'Rahmet'); // Адрес самой почты и имя отправителя
+  $mail->setFrom('natc999@gmail.com', 'Enthogenica'); // Адрес самой почты и имя отправителя
 
   // Получатель письма
-  $mail->addAddress('natc999@gmail.com');
+  $mail->addAddress(' t.tuchyk@gmail.com');
 
   // Прикрипление файлов к письму
   // if (!empty($file['name'][0])) {

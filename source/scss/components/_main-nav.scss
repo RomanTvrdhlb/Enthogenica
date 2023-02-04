@@ -28,14 +28,21 @@
             height: 2px;
             background-color: rgba(var(--bg-a),1.0);
             transition: all .4s;
+
+            @include small-tablet{
+              background-color: rgba(var(--bg-j),1.0);
+              left: -35%;
+              transform: translateX(0);
+            }
+        }
+
+        @include small-tablet{
+          color:  rgba(var(--cl-e),1.0);
         }
     }
 
     &:hover{
-        color: rgba(var(--cl-c),1.0);
-        &::before{
-            background-color: rgba(var(--bg-e),1.0);
-        }
+        color:  rgba(var(--cl-e),1.0);
     }
   }
 }
