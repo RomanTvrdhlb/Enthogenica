@@ -3,27 +3,64 @@
     flex-direction: column;
     grid-gap: 120px;
 
+    @include mobile{
+        grid-gap: 80px;
+    }
+
     &__item{
         display: grid;
         grid-template-columns: auto 1fr;
-    
+
         &:nth-child(even){
             direction: rtl;
+            justify-items: center;
             p{
                 margin-left: initial;
                 margin-right: -30px;
+
+                @include small-tablet{
+                    margin: 0;
+                }
             }
             .biography-list__title{
                 right: initial;
                 left: -7%;
+
+                @include tablet{
+                    left: 9%;
+                }
+
+                @include mobile{
+                    left: -6%;
+                }
             }
+        }
+
+        @include small-tablet{
+            grid-template-columns: 100%;
+            grid-gap: 90px;
         }
     }
     p{
         margin-left: -20px;
+
+        @include small-tablet{
+            margin: 0;
+        }
+
+        @include mobile{
+            max-width: 400px;
+        }
     }
     &__inner{
         position: relative;
+        height: fit-content;
+
+        @include small-tablet{
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+        }
     }
 
     &__title{
@@ -40,5 +77,13 @@
         position: absolute;
         bottom: -20%;
         right: -5%;
+
+        @include tablet{
+            right: 7%;
+        }
+
+        @include mobile{
+            right: 2%;
+        }
     }
 }

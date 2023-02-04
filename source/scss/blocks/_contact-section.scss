@@ -1,11 +1,28 @@
 .contact-section{
     padding: 190px 0;
 
+    @include tablet{
+        padding: 50px 0 60px;
+    }
+
+    @include small-tablet{
+        padding: 50px 0 80px;
+    }
+
+    @include mobile{
+        padding: clamp(50px, 12.195vw, 70px) 0 80px;
+    }
+
     &__box{
         display: grid;
         grid-template-columns: auto 1fr;
         grid-gap: 31px;
         align-items: center;
+
+        @include small-tablet{
+            grid-template-columns: 100%;
+            grid-gap: 187px;
+        }
     }
 
     &__wrapp{
@@ -16,13 +33,25 @@
             background-image: url(/img/index/back3.png);
             background-repeat: no-repeat;
             background-size: contain;
-            background-position: center center;
-            width: 583px;
-            height: 827px;
+            background-position: center left;
+            width: clamp(200px, 50.476vw, 583px);
+            height: clamp(523px, 65.602vw, 827px);
             top: 50%;
             left: 0;
             transform: translateY(-49%);
             z-index: -1;
+
+            @include tablet{
+                width: clamp(250px, 36.476vw, 583px);
+            }
+
+            @include small-tablet{
+                width: clamp(369px, 50.476vw, 583px);
+            }
+
+            @include mobile{
+                width: clamp(250px, 64.286vw, 369px);
+            }
         }
     }
 }

@@ -1,7 +1,7 @@
 .main-title {
   color: rgba(var(--cl-a), 1);
   font-family: var(--font-family2);
-  font-size: clamp(60px, 8.921vw, 100px);
+  font-size: clamp(50px, 8.921vw, 100px);
   font-weight: 400;
   font-style: normal;
   letter-spacing: normal;
@@ -9,6 +9,10 @@
   text-align: left;
   text-transform: uppercase;
   position: relative;
+
+  @include mobile{
+    font-size: clamp(35px, 10.417vw, 50px);
+  }
 }
 
 .main-phrase {

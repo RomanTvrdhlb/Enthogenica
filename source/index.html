@@ -2,33 +2,32 @@
 <html lang="En-en">
 @include('partials/head.html')
 
-<body>
+<body id="body">
   @include('partials/header.html')
 
   <main>
     <section class="main-section section-observe" id="Enthogenica">
-     
-      <div class="main-section__picture">
-      </div>
-      <div class="container--mode container">
+      <div class="main-section__wrapper">
+      <div class="container">
         <div class="main-section__box">
-          <div class="main-section__wrapp main-section__wrapp--mode">
-            <span class="main-phrase main-phrase--erotic">erotic</span>
-            <span class="main-phrase main-phrase--empathic">empathic</span>
-            <span class="main-phrase main-phrase--evo">evolutionary</span>
+          <div class="main-section__content main-section__content--mode">
+            <span class="main-phrase main-phrase--erotic" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">erotic</span>
+            <span class="main-phrase main-phrase--empathic" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">empathic</span>
+            <span class="main-phrase main-phrase--evo" data-aos="fade-right" data-aos-duration="1000">evolutionary</span>
           </div>
           <div class="main-section__inner">
             <h1 class="main-title">enthogenica</h1>
             <button class="main-button">read more</button>
           </div>
-          <div class="main-section__wrapp">
-            <span class="main-phrase main-phrase--primal">Primal</span>
-            <span class="main-phrase main-phrase--psy">psychedelic</span>
-            <span class="main-phrase main-phrase--precious">Precious</span>
+          <div class="main-section__content">
+            <span class="main-phrase main-phrase--primal" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">Primal</span>
+            <span class="main-phrase main-phrase--psy" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">psychedelic</span>
+            <span class="main-phrase main-phrase--precious" data-aos="fade-right" data-aos-duration="1000">Precious</span>
           </div>
 
         </div>
       </div>
+    </div>
     </section>
 
     <section class="gallery-section section-observe" id="process">
@@ -63,7 +62,7 @@
               </p>
             </li>
             <li class="gallery-list__item">
-              <div class="gallery-list__picture">
+              <div class="gallery-list__picture gallery-list__picture--mode">
                 <picture>
                   <source type='image/webp' srcset='img/index/img2.webp'>
                   <img width='668' height='689' src='img/index/img2.png' alt='image'>
@@ -204,13 +203,15 @@
           <form class="contact-form">
             <h3 class="contact-form__title">contact us:</h3>
             <label for="#" class="contact-form__label">
-              <input class="contact-form__input" type="text" placeholder="Your name" input-name>
+              <input class="contact-form__input input-name" type="text" placeholder="Your name" >
             </label>
             <label for="#" class="contact-form__label">
-              <input class="contact-form__input" type="text" placeholder="Your e-mail" input-email>
+              <input class="contact-form__input input-email" type="text" placeholder="Your e-mail" >
             </label>
-              <textarea class="contact-form__area" name="message" id="#" placeholder="Your message" input-message></textarea>
-            <button type="sumbit" class="contact-button">send</button>
+            <label for="#" class="contact-form__label">
+              <textarea class="contact-form__area input-message" name="message" id="#" placeholder="Your message" ></textarea>
+            </label>
+              <button type="sumbit" class="contact-button">send</button>
           </form>
         </div>
       </div>

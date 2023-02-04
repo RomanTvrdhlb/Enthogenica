@@ -12,21 +12,19 @@ const mobileMenuHandler = function(overlay, mobileMenu, burger) {
     toggleCustomClass(mobileMenu,'active');
     toggleCustomClass(overlay,'active');
    
-    if(!bodyEl.classList.contains('dis-scroll')) {
-      disableScroll()
-    } else {
-      enableScroll()
-    }
+    // if(!bodyEl.classList.contains('dis-scroll')) {
+    //   disableScroll()
+    // } else {
+    //   enableScroll()
+    // }
   })
-
-
 }
 
 const hideMenuHandler = function(overlay, mobileMenu, burger) {
     removeCustomClass(mobileMenu,'active');
     removeCustomClass(burger,'active');
     removeCustomClass(overlay,'active');
-    enableScroll()
+    // enableScroll()
 }
 
 if(burger) {
@@ -45,7 +43,6 @@ if (overlay) {
   overlay.addEventListener('click', function(e){
     if (e.target.classList.contains('overlay')) {
       hideMenuHandler(overlay,mobileMenu,burger);
-      console.log('123')
     }
   });
 

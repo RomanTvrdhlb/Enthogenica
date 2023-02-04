@@ -38,8 +38,10 @@ import { enableScroll } from './functions/enable-scroll';
 
 // Подключение анимаций по скроллу
 // import AOS from 'aos';
+
 // AOS.init();
 
+// window.addEventListener('load', AOS.refresh)
 // Подключение параллакса блоков при скролле
 // import Rellax from 'rellax';
 // const rellax = new Rellax('.rellax');

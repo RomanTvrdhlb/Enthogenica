@@ -1,5 +1,5 @@
 .gallery-section{
-    padding: 160px 0 215px;
+    padding: clamp(50px, 13.853vw, 160px) 0 clamp(136px, 18.615vw, 215px);
     position: relative;
 
 
@@ -14,5 +14,9 @@
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
+
+        @include mobile{
+            background-size: 500%;
+        }
     }
 }

@@ -6,7 +6,7 @@ footer {
 .footer{
   
   &-inner{
-  padding:80px 0 127px;
+  padding: clamp(75px, 6.926vw, 80px) 0 clamp(75px, 10.996vw, 127px);
   display: flex;
   align-items: center;
   justify-content: center;

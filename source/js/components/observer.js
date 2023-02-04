@@ -27,11 +27,12 @@ mainLinks.map(function(link){
     e.preventDefault();
     const id = e.target.getAttribute('href').replace('#', '');
     let headerHeight = header.clientHeight;
+    
     window.scrollTo({
       top: document.getElementById(id).offsetTop - (headerHeight),
       behavior:"smooth"
     })
-
+    
     window.pageYOffset = headerHeight ?
     removeCustomClass(link, 'active') : '';
   })

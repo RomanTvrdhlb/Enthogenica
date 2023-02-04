@@ -285,6 +285,10 @@ input[type="number"] {
   &--mode{
     max-width: var(--container-width-mode);
   }
+
+  @include small-tablet{
+    padding: 0 calc(var(--container-offset) * 2);
+  }
 }
 
 .panel,
@@ -307,13 +311,16 @@ input[type="number"] {
 
 
 .dis-scroll {
-  position: sticky;
-  top: 0;
-  left: 0;
+  // position: sticky;
+  // top: 0;
+  // left: 0;
 
-  width: 100%;
-  height: 100vh;
+  // height: 100vh;
   overflow: hidden;
+
+  position: fixed;
+  width: 100%;
+
 
   overscroll-behavior: none !important;
   scroll-behavior: none !important;
