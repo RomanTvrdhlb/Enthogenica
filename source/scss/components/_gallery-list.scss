@@ -24,7 +24,7 @@
       }
     }
 
-    &:nth-child(even) {
+    &:nth-child(2) {
       direction: rtl;
       p {
         margin: 0;
@@ -32,6 +32,27 @@
         @include mobile {
           margin-top: -70px;
         }
+      }
+      padding-top: clamp(210px, 29.437vw, 340px);
+      &::before {
+        position: absolute;
+        content: "";
+        background-image: url(/img/index/back1.png);
+        width: 100vw;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 160px;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%) scaleY(-1);
+
+        @include small-tablet {
+          height: 73px;
+        }
+      }
+      @include small-tablet {
+        padding-top: clamp(123px, 29.437vw, 340px);
       }
     }
 
@@ -65,26 +86,7 @@
     }
 
     &:first-child {
-      padding-bottom: clamp(210px, 29.437vw, 340px);
-      &::before {
-        position: absolute;
-        content: "";
-        background-image: url(/img/index/back1.png);
-        width: 100vw;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-        height: 160px;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%) scaleY(-1);
-
-        @include small-tablet {
-          height: 73px;
-        }
-      }
       @include small-tablet {
-        padding-bottom: clamp(123px, 29.437vw, 340px);
         .gallery-list__picture {
           margin-right: -40px;
         }

@@ -5,7 +5,7 @@
 <body>
   @include('partials/header.html')
 
-  <main id="home">
+  <main >
     <section class="main-section section-observe" id="Enthogenica">
       <div class="main-section__wrapper">
       <div class="container">
@@ -17,7 +17,7 @@
           </div>
           <div class="main-section__inner">
             <h1 class="main-title">enthogenica</h1>
-            <button class="main-button">read more</button>
+            <a href="#more" class="main-button">read more</a>
           </div>
           <div class="main-section__content">
             <span class="main-phrase main-phrase--primal" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">Primal</span>
@@ -33,8 +33,8 @@
     <section class="gallery-section section-observe" id="process">
       <div class="container">
         <div class="gallery-section__box">
-          <ul class="gallery-list">
-            <li class="gallery-list__item">
+          <ul class="gallery-list" >
+            <li class="gallery-list__item" id="home">
               <div class="gallery-list__picture">
                 <picture>
                   <source type='image/webp' srcset='img/index/img1.webp'>
@@ -61,7 +61,7 @@
                 mirage of metaphorical unity...
               </p>
             </li>
-            <li class="gallery-list__item">
+            <li class="gallery-list__item" id="more">
               <div class="gallery-list__picture gallery-list__picture--mode">
                 <picture>
                   <source type='image/webp' srcset='img/index/img2.webp'>

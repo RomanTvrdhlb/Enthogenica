@@ -1,8 +1,12 @@
 import {addCustomClass, removeCustomClass, removeClassInArray} from '../functions/customFunctions';
 import vars from '../_vars';
+import SmoothScroll from 'smooth-scroll';
 
 const {header,mainLinks,observSections} = vars
 
+const scroll = new SmoothScroll('a[href*="#"]', {
+  speed: 800,
+});
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
