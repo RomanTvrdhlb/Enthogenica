@@ -2334,21 +2334,7 @@ footer {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  grid-gap: clamp(45px, 6.869vw, 77px);
-}
-.main-section__inner .main-title::before {
-  position: absolute;
-  content: "";
-  bottom: calc(clamp(45px, 6.869vw, 77px) / 2 * -1);
-  left: 0;
-  height: 1px;
-  width: 100%;
-  background-color: rgba(var(--bg-e), 1);
-}
-@media (min-width: 1920px) {
-  .main-section__inner .main-title::before {
-    width: 584px;
-  }
+  padding-bottom: clamp(45px, 6.667vw, 77px);
 }
 .main-section__content {
   width: 100%;
