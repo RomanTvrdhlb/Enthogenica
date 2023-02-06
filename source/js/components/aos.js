@@ -1,5 +1,7 @@
 import AOS from 'aos';
 
-AOS.init();
+AOS.init({
+    once: true,
+});
 
 window.addEventListener('load', AOS.refresh)

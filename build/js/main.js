@@ -94,7 +94,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! aos */ "./node_modules/aos/dist/aos.js");
 /* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(aos__WEBPACK_IMPORTED_MODULE_0__);
 
-aos__WEBPACK_IMPORTED_MODULE_0___default().init();
+aos__WEBPACK_IMPORTED_MODULE_0___default().init({
+  once: true
+});
 window.addEventListener('load', (aos__WEBPACK_IMPORTED_MODULE_0___default().refresh));
 
 /***/ }),
