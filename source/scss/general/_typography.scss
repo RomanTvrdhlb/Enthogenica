@@ -89,4 +89,9 @@ z-index: 5;
   text-align: center;
   text-transform: uppercase;
   align-self: flex-end;
+  transition: all .4s;
+
+  &:hover{
+    background-color: rgba(var(--bg-i),1.0);
+  }
 }

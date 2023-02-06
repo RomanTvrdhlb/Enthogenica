@@ -223,7 +223,7 @@ const observer = new IntersectionObserver(entries => {
     }
   });
 }, {
-  threshold: 0.4
+  threshold: 0.3
 });
 observSections.forEach(section => observer.observe(section));
 mainLinks.map(function (link) {

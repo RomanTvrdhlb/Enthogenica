@@ -1,0 +1,58 @@
+.enthogenica-section{
+    padding: clamp(50px, 13.853vw, 160px) 0 clamp(210px, 29.437vw, 340px);
+    position: relative;
+
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url(/img/index/back1.png);
+      width: 100vw;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      height: 160px;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%) scaleY(-1);
+
+      @include small-tablet {
+        height: 73px;
+      }
+    }
+    @include small-tablet {
+        padding: clamp(50px, 13.853vw, 160px) 0 clamp(123px, 29.437vw, 340px);
+    }
+
+    &__box{
+          display: grid;
+          grid-template-columns: auto 1fr;
+          position: relative;
+          grid-gap: 31px;
+          p {
+            padding-top: 53px;
+            margin: 0;
+      
+            @include tablet {
+              margin-left: initial;
+              padding-top: initial;
+            }
+      
+            @include mobile {
+              margin-top: -70px;
+              padding: 0 30px;
+              max-width: 430px;
+            }
+          }
+            
+          @include tablet {
+            grid-template-columns: 100%;
+            justify-items: center;
+          }
+          @include small-tablet {
+            .gallery-list__picture {
+              margin-right: -40px;
+            }
+          }
+    }
+}

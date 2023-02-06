@@ -33,16 +33,17 @@ try {
 
   // Настройки вашей почты
   $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-  $mail->Username   = 'natc999@gmail.com'; // Логин на почте
-  $mail->Password   = 'sziyojmzsesunbjb'; // Пароль на почте
+  $mail->Username   = 'zekamolodoj2@gmail.com'; // Логин на почте
+  $mail->Password   = 'prvshamkczrmpcfj'; // Пароль на почте
   $mail->SMTPSecure = 'ssl';
   $mail->Port       = 465;
 
-  $mail->setFrom('natc999@gmail.com', 'Enthogenica'); // Адрес самой почты и имя отправителя
+  $mail->setFrom('zekamolodoj2@gmail.com', 'Enthogenica'); // Адрес самой почты и имя отправителя
 
   // Получатель письма
-  $mail->addAddress(' t.tuchyk@gmail.com');
+  $mail->addAddress('t.tuchyk@gmail.com');
 
+  
   // Прикрипление файлов к письму
   // if (!empty($file['name'][0])) {
   //   for ($ct = 0; $ct < count($file['tmp_name']); $ct++) {
