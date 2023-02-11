@@ -1,6 +1,11 @@
 .slide-section{
     width: 100%;
     position: relative;
+    margin-bottom: 90px;
+
+    @include small-tablet{
+        margin-bottom: 120px;
+    }
 
     &__box{
         display: flex;

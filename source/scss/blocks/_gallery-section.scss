@@ -1,22 +1,31 @@
-.gallery-section{
-    padding:clamp(50px, 15.584vw, 180px) 0 clamp(136px, 18.615vw, 215px);
+.gallery-section {
+  padding: clamp(50px, 15.584vw, 180px) 0 clamp(50px, 15.584vw, 180px);
+ 
+
+  &__box {
+    display: grid;
+    grid-template-columns: auto 1fr;
     position: relative;
+    grid-gap: 31px;
+    direction: rtl;
+    p {
+      padding-top: 53px;
+      margin: 0;
 
+      @include tablet {
+        margin-left: initial;
+        padding-top: initial;
+      }
 
-    &::before{
-        position: absolute;
-        content: "";
-        width: 100vw;
-        height: 65px;
-        background-image: url(/img/index/back1.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-
-        @include mobile{
-            background-size: 500%;
-        }
+      @include mobile {
+        margin-top: -70px;
+        padding: 0 30px;
+        max-width: 430px;
+      }
     }
+    @include tablet{
+        grid-template-columns: 100%;
+        justify-items: center;
+    }
+  }
 }
