@@ -3,13 +3,15 @@
     position: relative;
     margin-bottom: 90px;
 
+    
     @include small-tablet{
         margin-bottom: 120px;
     }
-
+ 
     &__box{
         display: flex;
         flex-direction: column;
         width: 100%;
+        align-items: center;
     }
 }

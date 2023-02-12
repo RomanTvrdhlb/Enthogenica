@@ -3,7 +3,12 @@
     flex-direction: column;
     grid-gap: 90px;
     width: 100%;
+    
 
+    @include notebook{
+        max-width: 1000px;
+    }
+   
     @include small-tablet{
         grid-gap: 130px;
     }
@@ -38,9 +43,7 @@
                     display: flex;
                     justify-content: end;            
                 }
-            }
-
-            
+            }  
         }
         &--second{
             display: grid;
@@ -95,6 +98,10 @@
                 left: 50%;
                 transform: translateX(-36%);
 
+                @include notebook{
+                    transform: translateX(-40%);
+                }
+
                 @include tablet{
                     position: relative;
                     display: flex;
@@ -113,6 +120,10 @@
                 transform: translateY(-50%);
                 left: 27px;
                 max-width: 205px;
+                
+                @include notebook{
+                    left: 15px;
+                }
 
                 @include tablet{
                     position: relative;
@@ -129,7 +140,7 @@
                 right:  16%;
                 top: 2.5%;
 
-                @include laptop{
+                @include notebook{
                     right: 15%;
                 }
                 @include tablet{
@@ -149,7 +160,7 @@
                 position: absolute;
                 left: 9%;
                 top: 8%;
-                @include laptop{
+                @include notebook{
                     left: 8%;
                 }
                 @include tablet{
@@ -163,10 +174,10 @@
                 max-width: 360px;
                 position: absolute;
                 left: 12%;
-                top: 3.5%;
-                @include laptop{
+                top: 3%;
+                @include notebook{
                     left: 10%;
-                    top: 3%;
+                    top: 2.5%;
                 }
                 @include tablet{
                     max-width: 100%;
