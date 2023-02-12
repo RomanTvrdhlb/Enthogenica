@@ -2102,24 +2102,19 @@ p {
 @media (max-width: 767px) {
   .slide-list {
     grid-gap: 130px;
-    padding: 0 calc(var(--container-offset) * 2);
   }
 }
 .slide-list__item {
   width: 100%;
   position: relative;
-}
-@media (max-width: 1024px) {
-  .slide-list__item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    grid-gap: 15px;
-  }
+  grid-gap: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .slide-list__item p {
   font-family: var(--font-family3);
@@ -2134,12 +2129,6 @@ p {
 @media (max-width: 1024px) {
   .slide-list__item--first p {
     position: initial;
-    padding: 0 15px;
-  }
-}
-@media (max-width: 767px) {
-  .slide-list__item--first p {
-    padding: 0;
   }
 }
 .slide-list__item--first .mode {
@@ -2161,7 +2150,6 @@ p {
 .slide-list__item--second {
   display: grid;
   grid-template-columns: 1fr 290px;
-  grid-gap: 20px;
 }
 .slide-list__item--second p {
   display: -webkit-box;
@@ -2170,7 +2158,6 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 20px;
 }
 @media (max-width: 767px) {
   .slide-list__item--second {
@@ -2178,7 +2165,6 @@ p {
   }
   .slide-list__item--second p {
     max-width: 100%;
-    padding: 0;
   }
 }
 .slide-list__item--third {
@@ -2193,7 +2179,6 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 20px;
 }
 @media (max-width: 767px) {
   .slide-list__item--third {
@@ -2201,7 +2186,6 @@ p {
   }
   .slide-list__item--third p {
     max-width: 100%;
-    padding: 0;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
@@ -2219,7 +2203,6 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-right: 20px;
 }
 @media (max-width: 767px) {
   .slide-list__item--fourth {
@@ -2227,26 +2210,14 @@ p {
   }
   .slide-list__item--fourth p {
     max-width: 100%;
-    padding: 0;
   }
-}
-.slide-list__item--fifth {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  grid-gap: 20px;
-  position: relative;
 }
 .slide-list__item--fifth p {
   position: absolute;
   top: 6%;
   left: 50%;
-  -webkit-transform: translateX(-34%);
-          transform: translateX(-34%);
+  -webkit-transform: translateX(-36%);
+          transform: translateX(-36%);
 }
 @media (max-width: 1024px) {
   .slide-list__item--fifth p {
@@ -2259,23 +2230,10 @@ p {
             justify-content: flex-start;
     -webkit-transform: initial;
             transform: initial;
-    left: 20px;
-  }
-}
-@media (max-width: 767px) {
-  .slide-list__item--fifth p {
     left: 0;
   }
 }
 .slide-list__item--sixth {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   grid-gap: 10px;
 }
 .slide-list__item--sixth p {
@@ -2293,29 +2251,13 @@ p {
     top: 0;
     -webkit-transform: initial;
             transform: initial;
-    left: 20px;
-  }
-}
-@media (max-width: 767px) {
-  .slide-list__item--sixth p {
     left: 0;
   }
 }
-.slide-list__item--seventh {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  grid-gap: 20px;
-}
 .slide-list__item--seventh p {
   position: absolute;
-  right: 21%;
-  top: 3%;
+  right: 16%;
+  top: 2.5%;
 }
 @media (max-width: 1239px) {
   .slide-list__item--seventh p {
@@ -2330,17 +2272,7 @@ p {
 }
 .slide-list__item--seventh .mode {
   top: initial;
-  bottom: 10%;
-}
-.slide-list__item--eighth {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  grid-gap: 20px;
+  bottom: 9.5%;
 }
 .slide-list__item--eighth p {
   max-width: 210px;
@@ -2356,29 +2288,13 @@ p {
 @media (max-width: 1024px) {
   .slide-list__item--eighth p {
     max-width: 100%;
-    padding: 0 20px;
     position: initial;
   }
-}
-@media (max-width: 767px) {
-  .slide-list__item--eighth p {
-    padding: 0;
-  }
-}
-.slide-list__item--ninth {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  grid-gap: 20px;
 }
 .slide-list__item--ninth p {
   max-width: 360px;
   position: absolute;
-  left: 14%;
+  left: 12%;
   top: 3.5%;
 }
 @media (max-width: 1239px) {
@@ -2390,37 +2306,19 @@ p {
 @media (max-width: 1024px) {
   .slide-list__item--ninth p {
     max-width: 100%;
-    padding: 0 20px;
     position: initial;
-  }
-}
-@media (max-width: 767px) {
-  .slide-list__item--ninth p {
-    padding: 0;
   }
 }
 .slide-list__item--tenth {
   display: grid;
   grid-template-columns: 2.6fr 1fr;
-  grid-gap: 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
-.slide-list__item--tenth p {
-  padding-right: 20px;
-}
 @media (max-width: 1024px) {
   .slide-list__item--tenth {
     grid-template-columns: 100%;
-  }
-  .slide-list__item--tenth p {
-    padding: 0 20px;
-  }
-}
-@media (max-width: 767px) {
-  .slide-list__item--tenth p {
-    padding: 0;
   }
 }
 .slide-list__item--mode {
@@ -2430,7 +2328,6 @@ p {
       -ms-flex-align: center;
           align-items: center;
   grid-gap: 20px 50px;
-  padding: 0 20px;
 }
 .slide-list__item--mode .slide-list__top, .slide-list__item--mode .slide-list__bottom {
   grid-column: span 2;
@@ -2441,11 +2338,6 @@ p {
   }
   .slide-list__item--mode .slide-list__top, .slide-list__item--mode .slide-list__bottom {
     grid-column: initial;
-  }
-}
-@media (max-width: 767px) {
-  .slide-list__item--mode {
-    padding: 0;
   }
 }
 .slide-list__picture img, .slide-list__picture picture {

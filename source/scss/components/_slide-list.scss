@@ -6,24 +6,19 @@
 
     @include small-tablet{
         grid-gap: 130px;
-        padding: 0 calc(var(--container-offset) * 2);
     }
     
     &__item{
         width: 100%;
         position: relative;
-        
-        @include tablet{
-            display: flex;
-            flex-direction: column;
-            grid-gap: 15px;
-        }
+        grid-gap: 20px;
+        display: flex;
+        flex-direction: column;
+            
         p{  
             font-family: var(--font-family3);
             font-size: 16px;
             color: rgba(var(--cl-a),1.0);
-
-            
         }
         &--first{
             p{
@@ -32,10 +27,6 @@
                 left: 7%;
                 @include tablet{
                     position: initial;
-                    padding: 0 15px;
-                }
-                @include small-tablet{
-                    padding: 0;
                 }
             }
             .mode{
@@ -54,19 +45,15 @@
         &--second{
             display: grid;
             grid-template-columns: 1fr 290px;
-            grid-gap: 20px;
 
             p{
                 display: flex;
                 align-items: center;
-                padding:0 20px;
             }
-
             @include small-tablet{
                 grid-template-columns: 100%;
                 p{
                     max-width: 100%;
-                    padding: 0;
                 }      
             }
         }
@@ -77,13 +64,11 @@
             p{
                 display: flex;
                 align-items: center;
-                padding-left:20px;
             }
             @include small-tablet{
                 grid-template-columns: 100%;
                 p{
                     max-width: 100%;
-                    padding: 0;
                     order: 2;
                 }
             }
@@ -95,44 +80,31 @@
             p{
                 display: flex;
                 align-items: center;
-                padding-right:20px;
             }
             @include small-tablet{
                 grid-template-columns: 100%;
                 p{
                     max-width: 100%;
-                    padding: 0;
                 }
             }
         }
         &--fifth{
-            display: flex;
-            flex-direction: column;
-            grid-gap: 20px;
-            position: relative;
-
             p{
                 position: absolute;
                 top: 6%;
                 left: 50%;
-                transform: translateX(-34%);
+                transform: translateX(-36%);
 
                 @include tablet{
                     position: relative;
                     display: flex;
                     justify-content: flex-start;
                     transform: initial;
-                    left: 20px;
-                }
-                @include small-tablet{
                     left: 0;
                 }
             }
         }
         &--sixth{
-            position: relative;
-            display: flex;
-            flex-direction: column;
             grid-gap: 10px;
 
             p{
@@ -147,23 +119,15 @@
                     max-width: 100%;
                     top: 0;
                     transform: initial;
-                    left: 20px;
-                }
-                @include small-tablet{
-                    left: 0;
+                    left:0;
                 }
             }
         }
         &--seventh{
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            grid-gap: 20px;
-
             p{
                 position: absolute;
-                right:  21%;
-                top: 3%;
+                right:  16%;
+                top: 2.5%;
 
                 @include laptop{
                     right: 15%;
@@ -176,14 +140,10 @@
             }
             .mode{
                 top: initial;
-                bottom: 10%;
+                bottom: 9.5%;
             }
         }
         &--eighth{
-            display: flex;
-            flex-direction: column;
-            grid-gap: 20px;
-
             p{
                 max-width: 210px;
                 position: absolute;
@@ -194,23 +154,15 @@
                 }
                 @include tablet{
                     max-width: 100%;
-                    padding: 0 20px;
                     position: initial;
-                }
-                @include small-tablet{
-                    padding: 0;
                 }
             }
         }
         &--ninth{
-            display: flex;
-            flex-direction: column;
-            grid-gap: 20px;
-
             p{
                 max-width: 360px;
                 position: absolute;
-                left: 14%;
+                left: 12%;
                 top: 3.5%;
                 @include laptop{
                     left: 10%;
@@ -218,39 +170,23 @@
                 }
                 @include tablet{
                     max-width: 100%;
-                    padding: 0 20px;
                     position: initial;
-                }
-                @include small-tablet{
-                    padding: 0;
                 }
             } 
         }
         &--tenth{
             display: grid;
             grid-template-columns: 2.6fr 1fr;
-            grid-gap: 20px;
             align-items: center;
-            p{
-                padding-right: 20px;
-            }
             @include tablet{
                 grid-template-columns: 100%;
-                p{
-                    padding: 0 20px;
-                }
             }
-            @include small-tablet{
-                p{  padding: 0;
-            }
-        }
         }
         &--mode{
             display: grid;
             grid-template-columns: 1.5fr 1fr;
             align-items: center;
             grid-gap: 20px 50px;
-            padding: 0 20px;
             .slide-list__top,.slide-list__bottom{
                 grid-column: span 2;
             }
@@ -259,9 +195,6 @@
                 .slide-list__top,.slide-list__bottom{
                     grid-column: initial;
                 }
-            }
-            @include small-tablet{
-                padding: 0;
             }
         }
     }
